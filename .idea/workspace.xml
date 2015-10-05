@@ -2,59 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243f6eeb-6f14-4aaf-842f-4736b5e24682" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fragments/begin.js-fragment" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fragments/closure.js-fragment" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/color.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/color.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/components.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/components.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/components/components.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/components/components.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/components.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/components/components.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/components.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/components/components.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/controls.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/controls.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/controls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/controls.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fragments/end.js-fragment" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/flexbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/flexbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/general.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/global.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/global.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/components/helloworld/helloworld.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/components/helloworld/helloworld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/components/helloworld/helloworld.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendors/jquery-2.1.4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/layout/layout.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/layout/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/layout/layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/layout/layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/controls/layout/layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/mixins.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/reset.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/global/styles/reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/simulator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/simulator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/simulator.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/variables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/viewport/viewport.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/viewport/viewport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/simulator/viewport/viewport.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/web-only.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/web-only.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/betajs-simulator-noscoped.js" afterPath="$PROJECT_DIR$/dist/betajs-simulator-noscoped.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/betajs-simulator.js" afterPath="$PROJECT_DIR$/dist/betajs-simulator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simulator/controls/controls.js" afterPath="$PROJECT_DIR$/src/simulator/controls/controls.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="betajs-simulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,11 +49,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43157893" vertical-offset="65" max-vertical-offset="555">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="555">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controls.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/simulator/controls/controls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09018036" vertical-offset="0" max-vertical-offset="499">
+              <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -136,6 +107,7 @@
         <option value="$PROJECT_DIR$/demos/components/helloworld/helloworld.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/demos/index.html" />
+        <option value="$PROJECT_DIR$/src/simulator/controls/controls.js" />
       </list>
     </option>
   </component>
@@ -199,7 +171,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,7 +185,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="betajs-simulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="betajs-simulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,22 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator/controls/controls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendors/betajs-dynamics-components-noscoped.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14385">
@@ -538,8 +520,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43157893" vertical-offset="65" max-vertical-offset="555">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="555">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simulator/controls/controls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09018036" vertical-offset="0" max-vertical-offset="499">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
           <folding />
         </state>
       </provider>

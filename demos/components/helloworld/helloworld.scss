@@ -1,0 +1,15 @@
+
+$helloworldheigth : 44px;
+
+ba-helloworld {
+  background: white;
+  border-bottom: 1px solid grey;
+
+  helloworld {
+    padding: 0 $helloworldheigth/2;
+    height: $helloworldheigth;
+    line-height: $helloworldheigth;
+    display: block;
+  }
+
+}

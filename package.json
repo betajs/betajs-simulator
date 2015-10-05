@@ -1,0 +1,51 @@
+{
+  "name": "betajs-simulator",
+  "version": "0.0.1",
+  "description": "BetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components",
+  "homepage": "http://betajs.com",
+  "contributors": ["Oliver Friedmann", "Victor Lingenthal"],
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-nodeunit": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-connect": "",
+    "grunt-preprocess": "",
+    "grunt-git-revision-count": "",
+    "grunt-closure-tools": "",
+    "grunt-node-qunit": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-wget": "",
+    "grunt-jsdoc": "",
+    "grunt-shell": "",
+    "grunt-template": "",
+    "grunt-contrib-watch": "",
+    "grunt-betajs-templates": "git://github.com/betajs/grunt-betajs-templates.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/betajs/betajs-simulator.git"
+  },
+  "meta": {
+    "status": "Active, In Development",
+    "weakDependencies": {
+      "betajs-scoped": "https://github.com/betajs/betajs-scoped"
+    },
+    "dependencies": {
+      "betajs": "https://github.com/betajs/betajs",
+      "betajs-browser": "https://github.com/betajs/betajs-browser",
+      "betajs-dynamics": "https://github.com/betajs/betajs-dyanmics"
+    },
+    "cdn": {
+      "betajs-dynamics-components.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components.js",
+      "betajs-dynamics-components.min.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components.min.js",
+      "betajs-dynamics-components-noscoped.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components-noscoped.js",
+      "betajs-dynamics-components-noscoped.min.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components-noscoped.min.js"
+    }
+  }
+}

@@ -1,0 +1,532 @@
+/*!
+betajs-dynamics-components - v0.0.3 - 2015-09-25
+Copyright (c) Oliver Friedmann
+MIT Software License.
+*/
+component {
+  margin: 10px; }
+
+/*******************************
+ **           Timer           **
+ *******************************/
+/*******************************
+ **          Layout           **
+ *******************************/
+/*******************************
+ **           Style           **
+ *******************************/
+a {
+  color: dodgerblue; }
+
+.icon-star {
+  color: #428bca; }
+
+.icon-star-empty {
+  color: #ddd; }
+
+.icon-search {
+  color: #777; }
+
+/*
+ * Mixins
+ */
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+overlaycontainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  overlaycontainer overlayinner {
+    margin: auto;
+    max-width: 85%;
+    max-height: 80%; }
+    overlaycontainer overlayinner message {
+      background: white;
+      border-radius: 2px;
+      padding: 10px; }
+
+ba-overlaycontainertest {
+  padding: 10px; }
+  ba-overlaycontainertest button {
+    color: white;
+    border-radius: 1px;
+    background-color: #4E8EF7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 14px 28px;
+    font-size: 13px;
+    font-family: "AvenirNextLTPro-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+ba-scrollpicker {
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: scroll; }
+  ba-scrollpicker element {
+    -webkit-box-flex: 0 0 30px;
+    -moz-box-flex: 0 0 30px;
+    -webkit-flex: 0 0 30px;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    color: #999;
+    background: #F4F4F4;
+    line-height: 30px;
+    display: block;
+    text-align: center; }
+  ba-scrollpicker .selected {
+    color: black; }
+
+ba-swipecontainer {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  ba-swipecontainer icon {
+    -webkit-box-flex: 0 0 44px;
+    -moz-box-flex: 0 0 44px;
+    -webkit-flex: 0 0 44px;
+    -ms-flex: 0 0 44px;
+    flex: 0 0 44px;
+    text-align: center;
+    margin: auto; }
+  ba-swipecontainer behind {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    z-index: 0;
+    box-sizing: border-box;
+    background: #ddd; }
+    ba-swipecontainer behind div {
+      -webkit-box-flex: 1 0 0;
+      -moz-box-flex: 1 0 0;
+      -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+      flex: 1 0 0; }
+  ba-swipecontainer swipe {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    left: -100%;
+    width: 300%; }
+    ba-swipecontainer swipe ba-item {
+      border-bottom: 1px solid #d3d3d3;
+      height: 44px;
+      line-height: 44px;
+      vertical-align: middle;
+      background: white; }
+    ba-swipecontainer swipe swipeleft {
+      -webkit-box-flex: 1 1 0;
+      -moz-box-flex: 1 1 0;
+      -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+      flex: 1 1 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;
+      width: 1px;
+      z-index: 1;
+      background: #33CC00;
+      opacity: 0.5; }
+      ba-swipecontainer swipe swipeleft div {
+        -webkit-box-flex: 1 0 0;
+        -moz-box-flex: 1 0 0;
+        -webkit-flex: 1 0 0;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0; }
+    ba-swipecontainer swipe > *:nth-child(1) {
+      -webkit-box-flex: 1 0 0;
+      -moz-box-flex: 1 0 0;
+      -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+      flex: 1 0 0;
+      -webkit-order: 2;
+      -ms-flex-order: 2;
+      order: 2; }
+    ba-swipecontainer swipe swiperight {
+      -webkit-box-flex: 1 1 0;
+      -moz-box-flex: 1 1 0;
+      -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+      flex: 1 1 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-order: 3;
+      -ms-flex-order: 3;
+      order: 3;
+      z-index: 1;
+      width: 1px;
+      background: yellow;
+      opacity: 0.5; }
+      ba-swipecontainer swipe swiperight div {
+        -webkit-box-flex: 1 0 0;
+        -moz-box-flex: 1 0 0;
+        -webkit-flex: 1 0 0;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0; }
+    ba-swipecontainer swipe .showdrag {
+      opacity: 1 !important; }
+
+ba-clickitem {
+  background: white;
+  border-bottom: 1px solid grey; }
+  ba-clickitem clickitem {
+    padding: 0 22px;
+    height: 44px;
+    line-height: 44px;
+    display: block; }
+
+ba-selectableitem selectableitem {
+  display: block;
+  background: white; }
+ba-selectableitem .selected {
+  background: lightgrey; }
+
+ba-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  overflow-y: scroll; }
+  ba-list list {
+    -webkit-box-flex: 1 1 0;
+    -moz-box-flex: 1 1 0;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0; }
+    ba-list list ba-item {
+      display: block; }
+
+ba-searchlist {
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
+  ba-searchlist searchbox {
+    -webkit-box-flex: 0 0 44px;
+    -moz-box-flex: 0 0 44px;
+    -webkit-flex: 0 0 44px;
+    -ms-flex: 0 0 44px;
+    flex: 0 0 44px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ddd; }
+    ba-searchlist searchbox input {
+      -webkit-box-flex: 1 1 0;
+      -moz-box-flex: 1 1 0;
+      -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+      flex: 1 1 0; }
+    ba-searchlist searchbox icon {
+      -webkit-box-flex: 0 0 44px;
+      -moz-box-flex: 0 0 44px;
+      -webkit-flex: 0 0 44px;
+      -ms-flex: 0 0 44px;
+      flex: 0 0 44px;
+      line-height: 44px;
+      text-align: center; }
+  ba-searchlist ba-listitem {
+    display: block; }
+
+ba-testtitledlist {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0; }
+
+ba-titledlist {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  ba-titledlist ba-title {
+    -webkit-box-flex: 0 0;
+    -moz-box-flex: 0 0;
+    -webkit-flex: 0 0;
+    -ms-flex: 0 0;
+    flex: 0 0;
+    display: block; }
+  ba-titledlist list {
+    overflow: scroll; }
+    ba-titledlist list ba-listitem {
+      display: block; }
+
+ba-addtitle {
+  background: white;
+  border-bottom: 1px solid grey; }
+  ba-addtitle addtitle {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 44px;
+    line-height: 44px; }
+    ba-addtitle addtitle title {
+      -webkit-box-flex: 1 1 0;
+      -moz-box-flex: 1 1 0;
+      -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+      flex: 1 1 0;
+      display: block;
+      padding: 0 22px; }
+    ba-addtitle addtitle button {
+      -webkit-box-flex: 0 0 44px;
+      -moz-box-flex: 0 0 44px;
+      -webkit-flex: 0 0 44px;
+      -ms-flex: 0 0 44px;
+      flex: 0 0 44px; }
+
+ba-components {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+ba-controls {
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  ba-controls controls {
+    -webkit-box-flex: 1 1 0;
+    -moz-box-flex: 1 1 0;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    ba-controls controls > * {
+      -webkit-box-flex: 1 1 0;
+      -moz-box-flex: 1 1 0;
+      -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+      flex: 1 1 0; }
+    ba-controls controls ba-layout {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    ba-controls controls ba-titledlist {
+      border: 1px solid grey; }
+      ba-controls controls ba-titledlist title {
+        border-bottom: 1px solid grey; }
+
+ba-layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  ba-layout ba-list {
+    border: 1px solid grey; }
+
+ba-environment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  ba-environment ba-controls {
+    -webkit-box-flex: 0 0 150px;
+    -moz-box-flex: 0 0 150px;
+    -webkit-flex: 0 0 150px;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px; }
+  ba-environment ba-simulator {
+    -webkit-box-flex: 1 1 0;
+    -moz-box-flex: 1 1 0;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    overflow-y: scroll; }
+
+ba-simulator appframe {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden; }
+ba-simulator .mobile {
+  margin: 10px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid black; }
+ba-simulator .web {
+  margin: 0; }
+ba-simulator .iphone5 {
+  height: 667px;
+  width: 375px; }
+ba-simulator .iphone4 {
+  height: 480px;
+  width: 320px; }
+
+/*******************************
+ **           Style           **
+ *******************************/
+a {
+  color: dodgerblue; }
+
+.icon-star {
+  color: #428bca; }
+
+.icon-star-empty {
+  color: #ddd; }
+
+.icon-search {
+  color: #777; }
+
+/*
+ * Mixins
+ */
+/*
+ * Mixins
+ */
+/*******************************
+ **           Reset           **
+ *******************************/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-decoration: none; }
+
+button, input {
+  border: none;
+  background: transparent; }
+
+input, textarea {
+  border: none;
+  -webkit-appearance: none; }
+
+textarea {
+  resize: none; }
+
+button:focus, input:focus, textarea:focus {
+  outline: none; }
+
+ul {
+  list-style-type: none; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+/*******************************
+ **           Timer           **
+ *******************************/
+/*******************************
+ **          Layout           **
+ *******************************/
+a:hover {
+  cursor: pointer; }
+
+/*# sourceMappingURL=betajs-dynamics-components.css.map */

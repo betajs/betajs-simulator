@@ -1,6 +1,6 @@
 
-BetaJS.Dynamics.Dynamic.extend("BetaJS.Dynamics.Components.Controls", {
+BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Dynamics.Controls", {
 
-    template: BetaJS.Dynamics.Dynamic.Components.Templates.controls
+    template: BetaJS.Simulator.Dynamics.Templates.controls
 
 }).register();

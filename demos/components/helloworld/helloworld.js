@@ -1,7 +1,7 @@
 
-BetaJS.Dynamics.Dynamic.extend("BetaJS.Dynamics.Components.Helloworld", {
+BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Components.Helloworld", {
 
-    template: BetaJS.Dynamics.Dynamic.Components.Templates.helloworld,
+    template: BetaJS.Simulator.Dynamics.Templates.helloworld,
 
     initial: {
 

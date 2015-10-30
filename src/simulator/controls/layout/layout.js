@@ -1,7 +1,7 @@
 
-BetaJS.Dynamics.Dynamic.extend("BetaJS.Dynamics.Components.Layout", {
+BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Dynamics.Layout", {
 
-    template: BetaJS.Dynamics.Dynamic.Components.Templates.layout,
+    template: BetaJS.Simulator.Dynamics.Templates.layout,
     
     initial : {
 

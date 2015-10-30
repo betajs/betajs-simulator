@@ -16,7 +16,7 @@ Scoped.define("module:", function () {
 	};
 });
 
-BetaJS.Dynamics.Dynamic.Components = {};
+BetaJS.Simulator.Dynamics = {};
 
 window.iterateModel = function (scope) {
     //console.log("Model : " + scope._tagName);

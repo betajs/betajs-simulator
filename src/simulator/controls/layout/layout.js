@@ -5,15 +5,15 @@ BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Dynamics.Layout", {
     
     collections : {
         systems : [
-            {title: 'mobile'},
-            {title: 'web'}
+            {value: 'mobile'},
+            {value: 'web'}
         ],
         mobile : [
-            {title: 'iphone4'},
-            {title: 'iphone5'}
+            {value: 'iphone4'},
+            {value: 'iphone5'}
         ],
         web:[
-            {title: 'notebook'}
+            {value: 'notebook'}
         ]
     }
 

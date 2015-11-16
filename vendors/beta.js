@@ -1,5 +1,5 @@
 /*!
-betajs - v1.0.2 - 2015-09-24
+betajs - v1.0.9 - 2015-11-14
 Copyright (c) Oliver Friedmann,Victor Lingenthal
 MIT Software License.
 */
@@ -557,7 +557,7 @@ Public.exports();
 	return Public;
 }).call(this);
 /*!
-betajs - v1.0.2 - 2015-09-24
+betajs - v1.0.9 - 2015-11-14
 Copyright (c) Oliver Friedmann,Victor Lingenthal
 MIT Software License.
 */
@@ -570,7 +570,7 @@ Scoped.binding("module", "global:BetaJS");
 Scoped.define("module:", function () {
 	return {
 		guid: "71366f7a-7da3-4e55-9a0b-ea0e4e2a9e79",
-		version: '416.1443129734771'
+		version: '425.1447507486110'
 	};
 });
 
@@ -2466,6 +2466,12 @@ Scoped.define("module:Functions", ["module:Types"], function (Types) {
 		
 		newClass: function (cls) {
 			return this.newClassFunc(cls).apply(this, this.getArguments(arguments, 1));
+		},
+		
+		callWithin: function (context, method) {
+			if (Types.is_string(method))
+				method = context[method];
+			return method.apply(context, this.getArguments(arguments, 2));
 		}
 	
 	};
@@ -3676,6 +3682,7 @@ Scoped.define("module:Objs", ["module:Types"], function (Types) {
 
 		filter: function (obj, f, context) {
 			var ret = null;
+			f = f || function (x) { return !!x; };
 			if (Types.is_array(obj)) {
 				ret = [];
 				for (var i = 0; i < obj.length; ++i) {
@@ -4727,7 +4734,11 @@ Scoped.define("module:Properties.PropertiesMixin", [
 				func: f,
 				dependencies: dependencies
 			};
-		}	
+		},
+		
+		pid: function () {
+			return this.cid();
+		}
 		
 	};
 });

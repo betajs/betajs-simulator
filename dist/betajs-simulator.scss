@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.2 - 2015-11-16
+betajs-simulator - v0.0.2 - 2015-11-24
 Copyright (c) Oliver Friedmann,Victor Lingenthal
 MIT Software License.
 */
@@ -226,10 +226,14 @@ ba-simulator {
 }
 
 ba-viewport {
+  @include display-flex;
+  @include flex-direction(column);
 
   appframe {
     position: relative;
     @include display-flex;
+    @include flex-direction(column);
+    @include flex(1 1 0);
     overflow: hidden;
   }
 
@@ -241,6 +245,8 @@ ba-viewport {
   }
   .web {
     margin: 0;
+    height: 100% !important;
+    width: 100% !important;
   }
 
   //Devices
@@ -523,4 +529,25 @@ ba-helloworld {
     display: block;
   }
 
+}
+
+$helloworldheigth : 44px;
+
+ba-webtest {
+  @include flex(1 1 0);
+  background: lightgreen;
+
+
+  webtest {
+    background: white;
+    border-bottom: 1px solid grey;
+
+    helloworld {
+      padding: 0 $helloworldheigth/2;
+      height: $helloworldheigth;
+      line-height: $helloworldheigth;
+      display: block;
+    }
+
+  }
 }

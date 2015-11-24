@@ -1,5 +1,6 @@
 
 window.components = new BetaJS.Collections.Collection({objects: [
+    {value  : 'webtest'},
     {value  : 'helloworld'}
 ]});
 

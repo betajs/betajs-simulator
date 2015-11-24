@@ -1,9 +1,13 @@
 
 ba-viewport {
+  @include display-flex;
+  @include flex-direction(column);
 
   appframe {
     position: relative;
     @include display-flex;
+    @include flex-direction(column);
+    @include flex(1 1 0);
     overflow: hidden;
   }
 
@@ -15,6 +19,8 @@ ba-viewport {
   }
   .web {
     margin: 0;
+    height: 100% !important;
+    width: 100% !important;
   }
 
   //Devices

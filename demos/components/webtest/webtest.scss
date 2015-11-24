@@ -1,0 +1,21 @@
+
+$helloworldheigth : 44px;
+
+ba-webtest {
+  @include flex(1 1 0);
+  background: lightgreen;
+
+
+  webtest {
+    background: white;
+    border-bottom: 1px solid grey;
+
+    helloworld {
+      padding: 0 $helloworldheigth/2;
+      height: $helloworldheigth;
+      line-height: $helloworldheigth;
+      display: block;
+    }
+
+  }
+}

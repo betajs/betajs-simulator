@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243f6eeb-6f14-4aaf-842f-4736b5e24682" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e098ba8de9af92920b6c02d43356c37ffd320f07/betajs-simulator.scssc" afterPath="$PROJECT_DIR$/.sass-cache/e098ba8de9af92920b6c02d43356c37ffd320f07/betajs-simulator.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/betajs-simulator-noscoped.js" afterPath="$PROJECT_DIR$/dist/betajs-simulator-noscoped.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/betajs-simulator.css" afterPath="$PROJECT_DIR$/dist/betajs-simulator.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/betajs-simulator.js" afterPath="$PROJECT_DIR$/dist/betajs-simulator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/betajs-simulator.scss" afterPath="$PROJECT_DIR$/dist/betajs-simulator.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simulator/controls/components/components.html" afterPath="$PROJECT_DIR$/src/simulator/controls/components/components.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simulator/controls/layout/layout.html" afterPath="$PROJECT_DIR$/src/simulator/controls/layout/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendors/beta-browser-noscoped.js" afterPath="$PROJECT_DIR$/vendors/beta-browser-noscoped.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendors/beta.js" afterPath="$PROJECT_DIR$/vendors/beta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendors/betajs-dynamics-components-noscoped.js" afterPath="$PROJECT_DIR$/vendors/betajs-dynamics-components-noscoped.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendors/betajs-dynamics-components.css" afterPath="$PROJECT_DIR$/vendors/betajs-dynamics-components.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendors/betajs-dynamics-noscoped.js" afterPath="$PROJECT_DIR$/vendors/betajs-dynamics-noscoped.js" />
     </list>
     <ignored path="betajs-simulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +29,7 @@
       <file leaf-file-name="viewport.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simulator/viewport/viewport.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
               <folding />
             </state>
@@ -48,18 +39,8 @@
       <file leaf-file-name="viewport.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simulator/viewport/viewport.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3529413">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/simulator/controls/components/components.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15756303">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webtest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/components/webtest/webtest.html">
+      <file leaf-file-name="components.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/simulator/controls/components/components.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -108,18 +89,18 @@
       <file leaf-file-name="controls.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simulator/controls/controls.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/simulator/controls/layout/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.063025214">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -161,8 +142,8 @@
         <option value="$PROJECT_DIR$/demos/components/webtest/webtest.js" />
         <option value="$PROJECT_DIR$/src/simulator/viewport/viewport.scss" />
         <option value="$PROJECT_DIR$/demos/components/webtest/webtest.scss" />
-        <option value="$PROJECT_DIR$/src/simulator/controls/layout/layout.html" />
         <option value="$PROJECT_DIR$/src/simulator/controls/components/components.html" />
+        <option value="$PROJECT_DIR$/src/simulator/controls/layout/layout.html" />
       </list>
     </option>
   </component>
@@ -296,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -545,6 +525,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -639,7 +620,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="476" y="23" width="964" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920467" sideWeight="0.49491096" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -964,14 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator/viewport/viewport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator/viewport/viewport.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -996,17 +969,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/components/webtest/webtest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator/controls/controls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
@@ -1016,15 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29683378">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator/controls/layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,22 +988,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.079155676">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator/viewport/viewport.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3529413">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/components/webtest/webtest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031512607">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simulator/viewport/viewport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator/controls/components/components.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15756303">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simulator/controls/layout/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.063025214">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding />
         </state>
       </provider>

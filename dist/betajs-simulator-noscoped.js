@@ -17,7 +17,7 @@ Scoped.binding("jquery", "global:jQuery");
 Scoped.define("module:", function () {
 	return {
 		guid: "5d9ab671-06b1-49d4-a0ea-9ff09f55a8b7",
-		version: '8.1448472530452'
+		version: '9.1448481162335'
 	};
 });
 
@@ -44,7 +44,7 @@ BetaJS.Simulator.Dynamics.Templates.components = '<ba-titledlist         ba-coll
 
 BetaJS.Simulator.Dynamics.Templates.controls = ' <h4>Controls </h4>  <controls>      <ba-layout></ba-layout>      <ba-components></ba-components>  </controls>';
 
-BetaJS.Simulator.Dynamics.Templates.layout = '<ba-titledlist         ba-collapsible="false"         ba-title="System"         ba-listcollection="{{systems}}"         ba-selected_item="{{=current_system}}">  </ba-titledlist>   <ba-titledlist         ba-collapsible="false"         ba-title="Device"         ba-listcollection="{{mobile}}"         ba-selected_item="{{=current_device}}">           </ba-titledlist>';
+BetaJS.Simulator.Dynamics.Templates.layout = '<ba-titledlist         ba-collapsible="{{false}}"         ba-model="{{{value : \'System\'}}}"         ba-listcollection="{{systems}}"         ba-selected_item="{{=current_system}}">  </ba-titledlist>   <ba-titledlist         ba-collapsible="{{false}}"         ba-model="{{{value : \'Device\'}}}"         ba-listcollection="{{mobile}}"         ba-selected_item="{{=current_device}}">           </ba-titledlist>';
 
 BetaJS.Simulator.Dynamics.Templates.simulator = ' <ba-controls></ba-controls>  <ba-viewport></ba-viewport> ';
 

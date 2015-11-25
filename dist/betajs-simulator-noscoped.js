@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.2 - 2015-11-24
+betajs-simulator - v0.0.2 - 2015-11-25
 Copyright (c) Oliver Friedmann,Victor Lingenthal
 MIT Software License.
 */
@@ -17,7 +17,7 @@ Scoped.binding("jquery", "global:jQuery");
 Scoped.define("module:", function () {
 	return {
 		guid: "5d9ab671-06b1-49d4-a0ea-9ff09f55a8b7",
-		version: '7.1448363824733'
+		version: '8.1448472530452'
 	};
 });
 
@@ -40,11 +40,11 @@ window.iterateModel = function (scope) {
     }
 };
 BetaJS.Simulator.Dynamics.Templates = BetaJS.Simulator.Dynamics.Templates || {};
-BetaJS.Simulator.Dynamics.Templates.components = '<ba-titledlist         ba-title="Components"         ba-selected_item="{{=current_component}}"         ba-listcollection="{{components}}"></ba-titledlist> ';
+BetaJS.Simulator.Dynamics.Templates.components = '<ba-titledlist         ba-collapsible="{{false}}"         ba-title="Components"         ba-selected_item="{{=current_component}}"         ba-listcollection="{{components}}"></ba-titledlist> ';
 
 BetaJS.Simulator.Dynamics.Templates.controls = ' <h4>Controls </h4>  <controls>      <ba-layout></ba-layout>      <ba-components></ba-components>  </controls>';
 
-BetaJS.Simulator.Dynamics.Templates.layout = '<ba-titledlist         ba-title="System"         ba-listcollection="{{systems}}"         ba-selected_item="{{=current_system}}">  </ba-titledlist>   <ba-titledlist         ba-title="Device"         ba-listcollection="{{mobile}}"         ba-selected_item="{{=current_device}}">           </ba-titledlist>';
+BetaJS.Simulator.Dynamics.Templates.layout = '<ba-titledlist         ba-collapsible="false"         ba-title="System"         ba-listcollection="{{systems}}"         ba-selected_item="{{=current_system}}">  </ba-titledlist>   <ba-titledlist         ba-collapsible="false"         ba-title="Device"         ba-listcollection="{{mobile}}"         ba-selected_item="{{=current_device}}">           </ba-titledlist>';
 
 BetaJS.Simulator.Dynamics.Templates.simulator = ' <ba-controls></ba-controls>  <ba-viewport></ba-viewport> ';
 

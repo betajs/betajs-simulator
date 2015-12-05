@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 						"./vendors/scoped.js" : "https://raw.githubusercontent.com/betajs/betajs-scoped/master/dist/scoped.js",
 						"./vendors/beta.js" : "https://raw.githubusercontent.com/betajs/betajs/master/dist/beta.js",
 						"./vendors/betajs-ui.js" : "https://raw.githubusercontent.com/betajs/betajs-ui/master/dist/betajs-ui.js",
-						"./vendors/beta-browser-noscoped.js" : "https://raw.githubusercontent.com/betajs/betajs-browser/master/dist/beta-browser-noscoped.js",
+						"./vendors/betajs-browser-noscoped.js" : "https://raw.githubusercontent.com/betajs/betajs-browser/master/dist/betajs-browser-noscoped.js",
 						"./vendors/betajs-dynamics-noscoped.js" : "https://raw.githubusercontent.com/betajs/betajs-dynamics/master/dist/betajs-dynamics-noscoped.js",
 						"./vendors/betajs-dynamics-components-noscoped.js" : "https://raw.githubusercontent.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components-noscoped.js",
 						"./vendors/betajs-dynamics-components.css" : "https://raw.githubusercontent.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components.css",

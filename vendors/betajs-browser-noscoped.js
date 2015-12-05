@@ -1,5 +1,5 @@
 /*!
-betajs-browser - v1.0.5 - 2015-11-17
+betajs-browser - v1.0.7 - 2015-12-05
 Copyright (c) Oliver Friedmann
 MIT Software License.
 */
@@ -21,7 +21,7 @@ Scoped.define("base:$", ["jquery:"], function (jquery) {
 Scoped.define("module:", function () {
 	return {
 		guid: "02450b15-9bbf-4be2-b8f6-b483bc015d06",
-		version: '46.1447778895126'
+		version: '52.1449326659387'
 	};
 });
 
@@ -283,7 +283,9 @@ Scoped.define("module:Cookies", ["base:Objs", "base:Types"], function (Objs, Typ
 	};
 });
 
-Scoped.define("module:Dom", ["base:Objs", "jquery:"], function (Objs, $) {
+Scoped.define("module:Dom", [
+    "base:Objs", "jquery:", "base:Types"
+], function (Objs, $, Types) {
 	return {	
 		
 		changeTag: function (node, name) {
@@ -499,6 +501,17 @@ Scoped.define("module:Dom", ["base:Objs", "jquery:"], function (Objs, $) {
 			if (start_offset > 0) 
 				node = $(node.get(0).splitText(start_offset));
 			return node;
+		},
+		
+		entitiesToUnicode: function (s) {
+			if (!s || !Types.is_string(s) || s.indexOf("&") < 0)
+				return s;
+			var temp = document.createElement("span");
+			temp.innerHTML = s;
+			s = temp.innerText;
+			if (temp.remove)
+				temp.remove();
+			return s;
 		}
 				
 	};
@@ -556,6 +569,10 @@ Scoped.define("module:DomExtend.DomExtension", [
 				return key in this._element.attributes ? this._element.attributes[key].value : (key in this._element ? this._element[key] : this._attrs[key]);
 			},
 			
+			hasAttr: function (key) {
+				return key in this._element.attributes || key in this._element || key in this._attrs;
+			},
+
 			writeAttr: function (key, value) {
 				if (key in this._element.attributes)
 					this._element.attributes[key].value = value;
@@ -1246,6 +1263,16 @@ Scoped.define("module:Info", [
 				    if (ma2)
 				    	return parseFloat(ma2[1]);
 				}
+				return null;
+			});
+		},
+		
+		chromeVersion: function () {
+			return this.__cached("chromeVersion", function (nav, ua) {
+				var re = /Chrome\/(\d+\.\d+)[^\d]/gi;
+				var ma = re.exec(ua);
+				if (ma)
+					return parseFloat(ma[1]);
 				return null;
 			});
 		},

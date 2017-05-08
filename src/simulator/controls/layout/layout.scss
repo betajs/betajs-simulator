@@ -4,8 +4,12 @@ ba-layout {
   @include flex(1 1 0);
   @include flex-direction(column);
 
-    ba-list {
+    layout-list {
       border: 1px solid grey;
+
+      .selected {
+        background: lightgrey;
+      }
     }
 
 }

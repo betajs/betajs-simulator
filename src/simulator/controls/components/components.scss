@@ -1,4 +1,14 @@
 
 ba-components {
-  @include display-flex
+  @include display-flex;
+
+  layout-list {
+    border: 1px solid grey;
+    overflow: scroll;
+
+    .selected {
+      background: lightgrey;
+    }
+  }
+
 }

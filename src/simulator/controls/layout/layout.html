@@ -1,16 +1,11 @@
-<ba-titledlist
-        ba-collapsible="{{false}}"
-        ba-model="{{{value : 'System'}}}"
-        ba-listcollection="{{systems}}"
-        ba-selected_item="{{=current_system}}">
+<layout-list ba-repeat="{{system :: systems}}">
+    <div ba-click="current_system = system" ba-class="{{{selected: current_system === system}}}">
+        {{system.value}}
+    </div>
+</layout-list>
 
-</ba-titledlist>
-
-
-<ba-titledlist
-        ba-collapsible="{{false}}"
-        ba-model="{{{value : 'Device'}}}"
-        ba-listcollection="{{mobile}}"
-        ba-selected_item="{{=current_device}}">
-
-         </ba-titledlist>
+<layout-list ba-repeat="{{device :: mobile}}">
+    <div ba-click="current_device = device" ba-class="{{{selected: current_device === device}}}">
+        {{device.value}}
+    </div>
+</layout-list>

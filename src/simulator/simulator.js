@@ -1,14 +1,12 @@
+Scoped.define("module:Simulator", [
+    "dynamics:Dynamic"
+], function(Dynamic, scoped) {
+    return Dynamic.extend({
+        scoped: scoped
+    }, {
 
-BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Dynamics.Simulator", {
+        template: "<%= template(filepathnoext + '.html') %>"
 
-    template: BetaJS.Simulator.Dynamics.Templates.simulator,
+    }).register();
 
-    initial: {
-
-        create : function () {
-            console.log('Simulator Loaded');
-        }
-
-    }
-
-}).register();
+});

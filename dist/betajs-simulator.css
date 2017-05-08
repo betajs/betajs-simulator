@@ -1,7 +1,7 @@
 /*!
-betajs-simulator - v0.0.2 - 2016-07-12
-Copyright (c) Oliver Friedmann,Victor Lingenthal
-MIT Software License.
+betajs-simulator - v0.0.4 - 2017-05-08
+Copyright (c) Victor Lingenthal
+Apache-2.0 Software License.
 */
 component {
   margin: 10px; }
@@ -43,6 +43,11 @@ ba-components {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
+  ba-components layout-list {
+    border: 1px solid grey;
+    overflow: scroll; }
+    ba-components layout-list .selected {
+      background: lightgrey; }
 
 ba-controls {
   padding: 10px;
@@ -96,8 +101,10 @@ ba-layout {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  ba-layout ba-list {
+  ba-layout layout-list {
     border: 1px solid grey; }
+    ba-layout layout-list .selected {
+      background: lightgrey; }
 
 ba-simulator {
   position: absolute;
@@ -234,30 +241,3 @@ ul {
  *******************************/
 a:hover {
   cursor: pointer; }
-
-ba-helloworld {
-  background: white;
-  border-bottom: 1px solid grey; }
-  ba-helloworld helloworld {
-    padding: 0 22px;
-    height: 44px;
-    line-height: 44px;
-    display: block; }
-
-ba-webtest {
-  -webkit-box-flex: 1 1 0;
-  -moz-box-flex: 1 1 0;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0;
-  background: lightgreen; }
-  ba-webtest webtest {
-    background: white;
-    border-bottom: 1px solid grey; }
-    ba-webtest webtest helloworld {
-      padding: 0 22px;
-      height: 44px;
-      line-height: 44px;
-      display: block; }
-
-/*# sourceMappingURL=betajs-simulator.css.map */

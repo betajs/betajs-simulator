@@ -1,51 +1,60 @@
 {
-  "name": "betajs-simulator",
-  "version": "0.0.3",
-  "description": "BetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components",
-  "homepage": "http://betajs.com",
-  "contributors": ["Oliver Friedmann", "Victor Lingenthal"],
-  "license": "MIT",
-  "devDependencies": {
-    "grunt": "",
-    "grunt-contrib-jshint": "",
-    "grunt-contrib-nodeunit": "",
-    "grunt-contrib-concat": "",
-    "grunt-contrib-uglify": "",
-    "grunt-contrib-clean": "",
-    "grunt-contrib-sass": "",
-    "grunt-contrib-connect": "",
-    "grunt-preprocess": "",
-    "grunt-git-revision-count": "",
-    "grunt-closure-tools": "",
-    "grunt-node-qunit": "",
-    "grunt-contrib-jshint": "",
-    "grunt-contrib-cssmin": "",
-    "grunt-wget": "",
-    "grunt-jsdoc": "",
-    "grunt-shell": "",
-    "grunt-template": "",
-    "grunt-contrib-watch": "",
-    "grunt-betajs-templates": "git://github.com/betajs/grunt-betajs-templates.git"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/betajs/betajs-simulator.git"
-  },
-  "meta": {
-    "status": "Active, In Development",
-    "weakDependencies": {
-      "betajs-scoped": "https://github.com/betajs/betajs-scoped"
+    "homepage": "http://betajs.com",
+    "license": "Apache-2.0",
+    "licenses": [
+        {
+            "type": "Apache-2.0",
+            "url": "https://github.com/betajs/betajs-simulator/blob/master/LICENSE"
+        }
+    ],
+    "author": {
+        "name": "BetaJS",
+        "email": "info@betajs.com"
     },
-    "dependencies": {
-      "betajs": "https://github.com/betajs/betajs",
-      "betajs-browser": "https://github.com/betajs/betajs-browser",
-      "betajs-dynamics": "https://github.com/betajs/betajs-dyanmics"
+    "bugs": {
+        "url": "https://github.com/betajs/betajs-simulator/issues"
     },
-    "cdn": {
-      "betajs-dynamics-components.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components.js",
-      "betajs-dynamics-components.min.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components.min.js",
-      "betajs-dynamics-components-noscoped.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components-noscoped.js",
-      "betajs-dynamics-components-noscoped.min.js": "http://cdn.rawgit.com/betajs/betajs-dynamics-components/master/dist/betajs-dynamics-components-noscoped.min.js"
+    "name": "betajs-simulator",
+    "version": "0.0.4",
+    "description": "BetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components",
+    "contributors": [
+        "Victor Lingenthal"
+    ],
+    "devDependencies": {
+        "lodash": "",
+        "grunt": "",
+        "grunt-contrib-jshint": "",
+        "grunt-contrib-concat": "",
+        "grunt-contrib-uglify": "",
+        "grunt-contrib-clean": "",
+        "grunt-contrib-copy": "",
+        "grunt-preprocess": "",
+        "grunt-closure-tools": "",
+        "grunt-node-qunit": "",
+        "qunit": "",
+        "jsdom": "",
+        "js-yaml": "",
+        "grunt-contrib-sass": "",
+        "grunt-contrib-cssmin": "",
+        "grunt-contrib-csslint": "",
+        "grunt-contrib-connect": "",
+        "grunt-githooks": "",
+        "betajs-scoped": "~0.0.13",
+        "betajs-compile": "~0.0.28",
+        "betajs": "~1.0.96",
+        "betajs-browser": "~1.0.65",
+        "betajs-dynamics": "~0.0.83",
+        "grunt-betajs-templates": "~0.1.11",
+        "js-beautify": ""
+    },
+    "main": "dist/betajs-simulator.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/betajs/betajs-simulator.git"
+    },
+    "meta": {
+        "blog": "http://blog.betajs.com",
+        "twitter": "http://twitter.com/thebetajs",
+        "guid": "a150338a-6525-40e5-b811-aa2de1afce26"
     }
-  }
 }

@@ -1,5 +1,6 @@
-<ba-titledlist
-        ba-collapsible="{{false}}"
-        ba-model="{{{value : 'Components'}}}"
-        ba-selected_item="{{=current_component}}"
-        ba-listcollection="{{components}}"></ba-titledlist>
+
+<layout-list ba-repeat="{{component :: components}}">
+    <div ba-click="current_component = component" ba-class="{{{selected: current_component === component}}}">
+        {{component.value}}
+    </div>
+</layout-list>

@@ -1,10 +1,20 @@
+Scoped.define("module:Components", [
+    "dynamics:Dynamic"
+], function(Dynamic, scoped) {
+    return Dynamic.extend({
+        scoped: scoped
+    }, {
 
-BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Dynamics.Components", {
+        template: "<%= template(filepathnoext + '.html') %>",
 
-    template: BetaJS.Simulator.Dynamics.Templates.components,
+        collections: {
+            "components": []
+        },
 
-    attrs : {
-        components : components
-    }
+        create: function() {
+            this.set("current_component", this.get("components").first());
+        }
 
-}).register();
+    }).register();
+
+});

@@ -1,6 +1,12 @@
+Scoped.define("module:Controls", [
+    "dynamics:Dynamic"
+], function(Dynamic, scoped) {
+    return Dynamic.extend({
+        scoped: scoped
+    }, {
 
-BetaJS.Dynamics.Dynamic.extend("BetaJS.Simulator.Dynamics.Controls", {
+        template: "<%= template(filepathnoext + '.html') %>"
 
-    template: BetaJS.Simulator.Dynamics.Templates.controls
+    }).register();
 
-}).register();
+});

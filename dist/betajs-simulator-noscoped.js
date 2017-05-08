@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.4 - 2017-05-08
+betajs-simulator - v0.0.5 - 2017-05-08
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -13,7 +13,7 @@ Scoped.binding('dynamics', 'global:BetaJS.Dynamics');
 Scoped.define("module:", function () {
 	return {
     "guid": "a150338a-6525-40e5-b811-aa2de1afce26",
-    "version": "0.0.4"
+    "version": "0.0.5"
 };
 });
 Scoped.assumeVersion('base:version', '~1.0.96');

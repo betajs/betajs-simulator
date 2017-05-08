@@ -1,0 +1,142 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.3.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v7.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/oliverfriedmann/Projects/Doodads/Libs/betajs-simulator',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/oliverfriedmann/.npm correctMkdir not in flight; initializing
+10 info lifecycle betajs-simulator@0.0.4~prepublish: betajs-simulator@0.0.4
+11 silly lifecycle betajs-simulator@0.0.4~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package.tgz',
+12 verbose tar pack   '/Users/oliverfriedmann/Projects/Doodads/Libs/betajs-simulator' ]
+13 verbose tarball /Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package.tgz
+14 verbose folder /Users/oliverfriedmann/Projects/Doodads/Libs/betajs-simulator
+15 verbose addLocalTarball adding from inside cache /Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package.tgz
+16 verbose correctMkdir /Users/oliverfriedmann/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd betajs-simulator@0.0.4
+18 verbose afterAdd /Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/oliverfriedmann/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package/package.json written
+21 silly publish { homepage: 'http://betajs.com',
+21 silly publish   license: 'Apache-2.0',
+21 silly publish   licenses:
+21 silly publish    [ { type: 'Apache-2.0',
+21 silly publish        url: 'https://github.com/betajs/betajs-simulator/blob/master/LICENSE' } ],
+21 silly publish   author: { name: 'BetaJS', email: 'info@betajs.com' },
+21 silly publish   bugs: { url: 'https://github.com/betajs/betajs-simulator/issues' },
+21 silly publish   name: 'betajs-simulator',
+21 silly publish   version: '0.0.4',
+21 silly publish   description: 'BetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components',
+21 silly publish   contributors: [ { name: 'Victor Lingenthal' } ],
+21 silly publish   devDependencies:
+21 silly publish    { lodash: '',
+21 silly publish      grunt: '',
+21 silly publish      'grunt-contrib-jshint': '',
+21 silly publish      'grunt-contrib-concat': '',
+21 silly publish      'grunt-contrib-uglify': '',
+21 silly publish      'grunt-contrib-clean': '',
+21 silly publish      'grunt-contrib-copy': '',
+21 silly publish      'grunt-preprocess': '',
+21 silly publish      'grunt-closure-tools': '',
+21 silly publish      'grunt-node-qunit': '',
+21 silly publish      qunit: '',
+21 silly publish      jsdom: '',
+21 silly publish      'js-yaml': '',
+21 silly publish      'grunt-contrib-sass': '',
+21 silly publish      'grunt-contrib-cssmin': '',
+21 silly publish      'grunt-contrib-csslint': '',
+21 silly publish      'grunt-contrib-connect': '',
+21 silly publish      'grunt-githooks': '',
+21 silly publish      'betajs-scoped': '~0.0.13',
+21 silly publish      'betajs-compile': '~0.0.28',
+21 silly publish      betajs: '~1.0.96',
+21 silly publish      'betajs-browser': '~1.0.65',
+21 silly publish      'betajs-dynamics': '~0.0.83',
+21 silly publish      'grunt-betajs-templates': '~0.1.11',
+21 silly publish      'js-beautify': '' },
+21 silly publish   main: 'dist/betajs-simulator.js',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git://github.com/betajs/betajs-simulator.git' },
+21 silly publish   meta:
+21 silly publish    { blog: 'http://blog.betajs.com',
+21 silly publish      twitter: 'http://twitter.com/thebetajs',
+21 silly publish      guid: 'a150338a-6525-40e5-b811-aa2de1afce26' },
+21 silly publish   readme: '# betajs-simulator 0.0.4\n\n\nBetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components\n\n\n\n\n\n\n\n\n\n\n\n\n## Links\n| Resource   | URL |\n| :--------- | --: |\n| Homepage   | [http://betajs.com](http://betajs.com) |\n| Git        | [git://github.com/betajs/betajs-simulator.git](git://github.com/betajs/betajs-simulator.git) |\n| Repository | [https://github.com/betajs/betajs-simulator](https://github.com/betajs/betajs-simulator) |\n| Blog       | [http://blog.betajs.com](http://blog.betajs.com) | \n| Twitter    | [http://twitter.com/thebetajs](http://twitter.com/thebetajs) | \n \n\n\n\n\n\n\n\n\n## Main Contributors\n\n- Victor Lingenthal\n\n## License\n\nApache-2.0\n\n\n\n\n\n\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '60933d37e3d92792dd15285b2116bccbd30ab085',
+21 silly publish   _id: 'betajs-simulator@0.0.4',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '508756947420abd31aa0300711e50f8e9e86a7d2',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name betajs-simulator
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'betajs-simulator',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'betajs-simulator',
+26 silly mapToRegistry   name: 'betajs-simulator',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/betajs-simulator
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/oliverfriedmann/.npm/betajs-simulator/0.0.4/package.tgz
+30 verbose request uri https://registry.npmjs.org/betajs-simulator
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 9:18:45 AM
+33 verbose request using bearer token for auth
+34 verbose request id 0edaa419e2562214
+35 http request PUT https://registry.npmjs.org/betajs-simulator
+36 http 403 https://registry.npmjs.org/betajs-simulator
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 08 May 2017 13:18:46 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-jfk8142-JFK',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1494249526.944154,VS0,VE586',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/oliverfriedmann/.npm/registry.npmjs.org/betajs-simulator on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.4." : betajs-simulator
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid betajs-simulator
+43 verbose cwd /Users/oliverfriedmann/Projects/Doodads/Libs/betajs-simulator
+44 error Darwin 16.5.0
+45 error argv "/usr/local/Cellar/node/7.3.0/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v7.3.0
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.4." : betajs-simulator
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

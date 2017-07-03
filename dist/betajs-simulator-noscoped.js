@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.5 - 2017-05-08
+betajs-simulator - v0.0.6 - 2017-07-01
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -13,7 +13,7 @@ Scoped.binding('dynamics', 'global:BetaJS.Dynamics');
 Scoped.define("module:", function () {
 	return {
     "guid": "a150338a-6525-40e5-b811-aa2de1afce26",
-    "version": "0.0.5"
+    "version": "0.0.6"
 };
 });
 Scoped.assumeVersion('base:version', '~1.0.96');
@@ -114,6 +114,17 @@ Scoped.define("module:Viewport", [
                 current_component: "<>+[tagname='ba-components']:current_component",
                 current_system: "<>+[tagname='ba-layout']:current_system",
                 current_device: "<>+[tagname='ba-layout']:current_device"
+            }
+        },
+
+        events: {
+            "change:current_component": function() {
+                if (this.get("current_component") && this.get("current_component").get("system")) {
+                    var systems = this.scope("<>+[tagname='ba-layout']").get("systems");
+                    this.set("current_system", systems.query({
+                        value: this.get("current_component").get("system")
+                    }).next());
+                }
             }
         }
 

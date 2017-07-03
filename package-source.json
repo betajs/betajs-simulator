@@ -1,6 +1,6 @@
 {
   "name": "betajs-simulator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "BetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components",
   "contributors": ["Victor Lingenthal"],
   "devDependencies": {

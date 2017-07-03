@@ -1,4 +1,4 @@
-# betajs-simulator 0.0.5
+# betajs-simulator 0.0.6
 
 
 BetaJS-Simulator offers a very basic simulator for testing betajs-dynamics-components

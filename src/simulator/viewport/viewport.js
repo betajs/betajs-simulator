@@ -1,6 +1,10 @@
 Scoped.define("module:Viewport", [
-    "dynamics:Dynamic"
-], function(Dynamic, scoped) {
+    "dynamics:Dynamic",
+    "base:Promise",
+    "browser:Loader",
+    "base:Time",
+    "browser:Dom"
+], function(Dynamic, Promise, Loader, Time, Dom, scoped) {
     return Dynamic.extend({
         scoped: scoped
     }, {
@@ -15,15 +19,55 @@ Scoped.define("module:Viewport", [
             }
         },
 
+        create: function() {
+            this._updateCurrentComponent();
+        },
+
         events: {
             "change:current_component": function() {
-                if (this.get("current_component") && this.get("current_component").get("system")) {
-                    var systems = this.scope("<>+[tagname='ba-layout']").get("systems");
-                    this.set("current_system", systems.query({
-                        value: this.get("current_component").get("system")
-                    }).next());
-                }
+                this._updateCurrentComponent();
             }
+        },
+
+        customContainer: function() {
+            return this.activeElement().querySelector("custom-container");
+        },
+
+        _updateCurrentComponent: function() {
+            var comp = this.get("current_component");
+            if (!comp)
+                return;
+            if (comp.get("system")) {
+                var systems = this.scope("<>+[tagname='ba-layout']").get("systems");
+                this.set("current_system", systems.query({
+                    value: comp.get("system")
+                }).next());
+            }
+            this.customContainer().innerHTML = "";
+            var promise = Promise.create();
+            promise.success(function() {
+                if (comp.get("customhtml"))
+                    this.customContainer().innerHTML = comp.get("customhtml");
+                if (comp.get("customscript"))
+                    comp.get("customscript")();
+            }, this);
+            if (comp.get("externalfile")) {
+                var src = comp.get("externalfile");
+                src += (src.indexOf("?") >= 0 ? "&" : "?") + "rev=" + Time.now();
+                Loader.loadHtml(src, function(content) {
+                    var parsed = Dom.elementsByTemplate(content);
+                    var code = "";
+                    parsed.forEach(function(elem) {
+                        if (elem.id == "test")
+                            comp.set("customhtml", "<div id='test'>" + elem.innerHTML + "</div>");
+                        if (elem.tagName == "SCRIPT")
+                            comp.set("customscript", new Function(elem.innerHTML));
+                    });
+                    comp.set("externalfile", "");
+                    promise.asyncSuccess(true);
+                });
+            } else
+                promise.asyncSuccess(true);
         }
 
     }).register();

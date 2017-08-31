@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.7 - 2017-08-25
+betajs-simulator - v0.0.8 - 2017-08-31
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -1007,7 +1007,7 @@ Public.exports();
 	return Public;
 }).call(this);
 /*!
-betajs-simulator - v0.0.7 - 2017-08-25
+betajs-simulator - v0.0.8 - 2017-08-31
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -1021,7 +1021,7 @@ Scoped.binding('dynamics', 'global:BetaJS.Dynamics');
 Scoped.define("module:", function () {
 	return {
     "guid": "a150338a-6525-40e5-b811-aa2de1afce26",
-    "version": "0.0.7"
+    "version": "0.0.8"
 };
 });
 Scoped.assumeVersion('base:version', '~1.0.96');
@@ -1131,7 +1131,7 @@ Scoped.define("module:Viewport", [
         scoped: scoped
     }, {
 
-        template: "\n\n<appframe\n        class=\"\n            {{current_system.value}}\n            {{current_device.value}}\n        \">\n\n    <ba-{{current_component.value}} ba-attrs=\"{{current_component.attrs}}\"></ba-{{current_component.value}}>\n    <custom-container></custom-container>\n\n</appframe>\n",
+        template: "\n\n<appframe\n        class=\"\n            {{current_system.value}}\n            {{current_device.value}}\n        \">\n\n    <ba-{{current_component.value}} ba-attrs=\"{{current_component.attrs}}\"></ba-{{current_component.value}}>\n    <custom-container ba-ignore></custom-container>\n\n</appframe>\n",
 
         initial: {
             bind: {
@@ -1168,12 +1168,15 @@ Scoped.define("module:Viewport", [
             this.customContainer().innerHTML = "";
             var promise = Promise.create();
             promise.success(function() {
-                if (comp.get("customhtml"))
+                if (comp.get("customhtml")) {
+                    this.customContainer().parentElement.children[0].innerHTML = "";
                     this.customContainer().innerHTML = comp.get("customhtml");
+                }
                 if (comp.get("customscript"))
                     comp.get("customscript")();
             }, this);
             if (comp.get("externalfile")) {
+                this.customContainer().parentElement.children[0].innerHTML = "";
                 var src = comp.get("externalfile");
                 src += (src.indexOf("?") >= 0 ? "&" : "?") + "rev=" + Time.now();
                 Loader.loadHtml(src, function(content) {

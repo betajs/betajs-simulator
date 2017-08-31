@@ -46,12 +46,15 @@ Scoped.define("module:Viewport", [
             this.customContainer().innerHTML = "";
             var promise = Promise.create();
             promise.success(function() {
-                if (comp.get("customhtml"))
+                if (comp.get("customhtml")) {
+                    this.customContainer().parentElement.children[0].innerHTML = "";
                     this.customContainer().innerHTML = comp.get("customhtml");
+                }
                 if (comp.get("customscript"))
                     comp.get("customscript")();
             }, this);
             if (comp.get("externalfile")) {
+                this.customContainer().parentElement.children[0].innerHTML = "";
                 var src = comp.get("externalfile");
                 src += (src.indexOf("?") >= 0 ? "&" : "?") + "rev=" + Time.now();
                 Loader.loadHtml(src, function(content) {

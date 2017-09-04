@@ -50,10 +50,13 @@ Scoped.define("module:Viewport", [
                     this.customContainer().parentElement.children[0].innerHTML = "";
                     this.customContainer().innerHTML = comp.get("customhtml");
                 }
+                if (comp.get("customstyle"))
+                    this.customContainer().appendChild(Loader.inlineStyles(comp.get("customstyle")));
                 if (comp.get("customscript"))
                     comp.get("customscript")();
             }, this);
             if (comp.get("externalfile")) {
+                comp.set("customstyle", comp.get("customstyle") || "");
                 this.customContainer().parentElement.children[0].innerHTML = "";
                 var src = comp.get("externalfile");
                 src += (src.indexOf("?") >= 0 ? "&" : "?") + "rev=" + Time.now();
@@ -65,6 +68,8 @@ Scoped.define("module:Viewport", [
                             comp.set("customhtml", "<div id='test'>" + elem.innerHTML + "</div>");
                         if (elem.tagName == "SCRIPT")
                             comp.set("customscript", new Function(elem.innerHTML));
+                        if (elem.tagName == "STYLE")
+                            comp.set("customstyle", comp.get("customstyle") + elem.innerHTML);
                     });
                     comp.set("externalfile", "");
                     promise.asyncSuccess(true);

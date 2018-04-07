@@ -1,10 +1,10 @@
 /*!
-betajs-simulator - v0.0.9 - 2017-09-04
+betajs-simulator - v0.0.9 - 2018-04-07
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
 /** @flow **//*!
-betajs-scoped - v0.0.16 - 2017-07-23
+betajs-scoped - v0.0.17 - 2018-02-17
 Copyright (c) Oliver Friedmann
 Apache-2.0 Software License.
 */
@@ -16,7 +16,7 @@ var Globals = (function () {
  * @module Globals
  * @access private
  */
-return { 
+return {
 		
 	/**
 	 * Returns the value of a global variable.
@@ -26,11 +26,11 @@ return {
 	 */
 	get : function(key/* : string */) {
 		if (typeof window !== "undefined")
-			return window[key];
+			return key ? window[key] : window;
 		if (typeof global !== "undefined")
-			return global[key];
+			return key ? global[key] : global;
 		if (typeof self !== "undefined")
-			return self[key];
+			return key ? self[key] : self;
 		return undefined;
 	},
 
@@ -64,6 +64,8 @@ return {
 	 * Globals.getPath("foo.bar")
 	 */
 	getPath: function (path/* : string */) {
+		if (!path)
+			return this.get();
 		var args = path.split(".");
 		if (args.length == 1)
 			return this.get(path);		
@@ -474,7 +476,7 @@ function newNamespace (opts/* : {tree ?: boolean, global ?: boolean, root ?: Obj
 	function nodeUnresolvedWatchers(node/* : Node */, base, result) {
 		node = node || nsRoot;
 		result = result || [];
-		if (!node.ready)
+		if (!node.ready && node.lazy.length === 0 && node.watchers.length > 0)
 			result.push(base);
 		for (var k in node.children) {
 			var c = node.children[k];
@@ -965,7 +967,7 @@ var Public = Helper.extend(rootScope, (function () {
 return {
 		
 	guid: "4b6878ee-cb6a-46b3-94ac-27d91f58d666",
-	version: '0.0.16',
+	version: '0.0.17',
 		
 	upgrade: Attach.upgrade,
 	attach: Attach.attach,
@@ -1007,7 +1009,7 @@ Public.exports();
 	return Public;
 }).call(this);
 /*!
-betajs-simulator - v0.0.9 - 2017-09-04
+betajs-simulator - v0.0.9 - 2018-04-07
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -1143,6 +1145,8 @@ Scoped.define("module:Viewport", [
 
         create: function() {
             this._updateCurrentComponent();
+
+            var test = null;
         },
 
         events: {

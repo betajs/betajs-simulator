@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.9 - 2017-09-04
+betajs-simulator - v0.0.9 - 2018-04-07
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -159,6 +159,15 @@ ba-viewport {
     -ms-flex: 1 1 0;
     flex: 1 1 0;
     overflow: hidden; }
+    ba-viewport appframe custom-container {
+      height: 100%; }
+      ba-viewport appframe custom-container #test {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex; }
   ba-viewport .mobile {
     margin: 10px;
     -webkit-flex-direction: column;

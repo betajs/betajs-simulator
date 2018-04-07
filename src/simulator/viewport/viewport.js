@@ -21,6 +21,8 @@ Scoped.define("module:Viewport", [
 
         create: function() {
             this._updateCurrentComponent();
+
+            var test = null;
         },
 
         events: {

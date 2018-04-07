@@ -1,5 +1,5 @@
 /*!
-betajs-simulator - v0.0.9 - 2017-09-04
+betajs-simulator - v0.0.9 - 2018-04-07
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -135,6 +135,8 @@ Scoped.define("module:Viewport", [
 
         create: function() {
             this._updateCurrentComponent();
+
+            var test = null;
         },
 
         events: {

@@ -1,10 +1,10 @@
 /*!
-betajs-simulator - v0.0.9 - 2018-04-07
+betajs-simulator - v0.0.9 - 2018-09-26
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
 /** @flow **//*!
-betajs-scoped - v0.0.17 - 2018-02-17
+betajs-scoped - v0.0.19 - 2018-04-07
 Copyright (c) Oliver Friedmann
 Apache-2.0 Software License.
 */
@@ -759,10 +759,7 @@ function newScope (parent, parentNS, rootNS, globalNS) {
 		resolve: function (namespaceLocator) {
 			var parts = namespaceLocator.split(":");
 			if (parts.length == 1) {
-				return {
-					namespace: privateNamespace,
-					path: parts[0]
-				};
+                throw ("The locator '" + parts[0] + "' requires a namespace.");
 			} else {
 				var binding = bindings[parts[0]];
 				if (!binding)
@@ -967,7 +964,7 @@ var Public = Helper.extend(rootScope, (function () {
 return {
 		
 	guid: "4b6878ee-cb6a-46b3-94ac-27d91f58d666",
-	version: '0.0.17',
+	version: '0.0.19',
 		
 	upgrade: Attach.upgrade,
 	attach: Attach.attach,
@@ -1009,7 +1006,7 @@ Public.exports();
 	return Public;
 }).call(this);
 /*!
-betajs-simulator - v0.0.9 - 2018-04-07
+betajs-simulator - v0.0.9 - 2018-09-26
 Copyright (c) Victor Lingenthal
 Apache-2.0 Software License.
 */
@@ -1023,7 +1020,8 @@ Scoped.binding('dynamics', 'global:BetaJS.Dynamics');
 Scoped.define("module:", function () {
 	return {
     "guid": "a150338a-6525-40e5-b811-aa2de1afce26",
-    "version": "0.0.9"
+    "version": "0.0.9",
+    "datetime": 1537992430792
 };
 });
 Scoped.assumeVersion('base:version', '~1.0.96');
@@ -1170,10 +1168,12 @@ Scoped.define("module:Viewport", [
                 }).next());
             }
             this.customContainer().innerHTML = "";
+            this.customContainer().style.display = 'none';
             var promise = Promise.create();
             promise.success(function() {
                 if (comp.get("customhtml")) {
                     this.customContainer().parentElement.children[0].innerHTML = "";
+                    this.customContainer().style.display = '';
                     this.customContainer().innerHTML = comp.get("customhtml");
                 }
                 if (comp.get("customstyle"))
